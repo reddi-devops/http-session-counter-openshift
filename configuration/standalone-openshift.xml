@@ -530,7 +530,7 @@
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
         <outbound-socket-binding name="remote-jdg-server">
-            <remote-destination host="${HOTROD_SERVICE_HOST:127.0.0.1}" port="${HOTROD_SERVICE_PORT:11222}"/>
+            <remote-destination host="${env.DATAGRID_APP_HOTROD_SERVICE_HOST:127.0.0.1}" port="${env.DATAGRID_APP_HOTROD_SERVICE_PORT:11222}"/>
         </outbound-socket-binding> 
     </socket-binding-group>
 </server>
