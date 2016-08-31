@@ -8,7 +8,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Http Session Counter</title>
 <jsp:useBean id="counter" class="org.everythingjboss.httpsession.Counter" scope="session" />
-<jsp:useBean id="system" class="java.lang.System" scope="application" />
 </head>
 <body>
 	Counter is set at : <jsp:getProperty property="incrementedValue" name="counter" /> <br/>
