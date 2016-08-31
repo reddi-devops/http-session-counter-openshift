@@ -208,7 +208,7 @@
                     <remote-store cache="http-session-cache" socket-timeout="60000" shared="true" preload="true" passivation="false" purge="false">
                         <remote-server outbound-socket-binding="remote-jdg-server"/>
                     </remote-store>                
-                </replicated-cache>
+                </invalidation-cache>
                 <replicated-cache name="sso" mode="SYNC" batching="true"/>
                 <distributed-cache name="dist" mode="ASYNC" batching="true" l1-lifespan="0">
                     <file-store/>

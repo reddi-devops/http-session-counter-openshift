@@ -12,6 +12,6 @@
 </head>
 <body>
 	Counter is set at : <jsp:getProperty property="incrementedValue" name="counter" /> <br/>
-    The request arrived at node : <jsp:getProperty property="property" value="jboss.host.name" name="system"/>
+    The request arrived at node : <%= System.getProperty("jboss.host.name") %>
 </body>
 </html>
