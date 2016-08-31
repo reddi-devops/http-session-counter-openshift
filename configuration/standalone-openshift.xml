@@ -202,9 +202,9 @@
                     <locking isolation="REPEATABLE_READ"/>
                 </replicated-cache>
             </cache-container>
-            <cache-container name="web" aliases="standard-session-cache" default-cache="repl" module="org.jboss.as.clustering.web.infinispan">
+            <cache-container name="web" aliases="standard-session-cache" default-cache="inval" module="org.jboss.as.clustering.web.infinispan">
                 <transport lock-timeout="60000"/>
-                <replicated-cache name="repl" mode="ASYNC" batching="true">
+                <invalidation-cache name="inval" mode="ASYNC" batching="true">
                     <remote-store cache="http-session-cache" socket-timeout="60000" shared="true" preload="true" passivation="false" purge="false">
                         <remote-server outbound-socket-binding="remote-jdg-server"/>
                     </remote-store>                
